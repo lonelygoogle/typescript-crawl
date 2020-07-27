@@ -1,0 +1,30 @@
+{
+  "name": "typescript-crawl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node ./src/crawl.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lonelygoogle/typescript-crawl.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lonelygoogle/typescript-crawl/issues"
+  },
+  "homepage": "https://github.com/lonelygoogle/typescript-crawl#readme",
+  "devDependencies": {
+    "@types/cheerio": "^0.22.21",
+    "cheerio": "^1.0.0-rc.3",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "@types/superagent": "^4.1.8",
+    "superagent": "^5.3.1"
+  }
+}
