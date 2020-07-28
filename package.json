@@ -4,7 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node ./src/crawl.ts"
+    "dev:build": "tsc -w",
+    "dev:start": "nodemon node ./build/crawl.js",
+    "dev": "concurrently npm:dev:*"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "data/*"
+    ]
   },
   "repository": {
     "type": "git",
@@ -20,6 +27,8 @@
   "devDependencies": {
     "@types/cheerio": "^0.22.21",
     "cheerio": "^1.0.0-rc.3",
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.7"
   },
