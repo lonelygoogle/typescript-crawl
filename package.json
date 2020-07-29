@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev:build": "tsc -w",
-    "dev:start": "nodemon node ./build/crawl.js",
-    "dev": "concurrently npm:dev:*"
+    "dev:start": "nodemon node ./build/index.js",
+    "dev": "tsc && concurrently npm:dev:*"
   },
   "nodemonConfig": {
     "ignore": [
@@ -26,6 +26,7 @@
   "homepage": "https://github.com/lonelygoogle/typescript-crawl#readme",
   "devDependencies": {
     "@types/cheerio": "^0.22.21",
+    "@types/express": "^4.17.7",
     "cheerio": "^1.0.0-rc.3",
     "concurrently": "^5.2.0",
     "nodemon": "^2.0.4",
@@ -34,6 +35,7 @@
   },
   "dependencies": {
     "@types/superagent": "^4.1.8",
+    "express": "^4.17.1",
     "superagent": "^5.3.1"
   }
 }

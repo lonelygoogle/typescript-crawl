@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import superagent from 'superagent'
 
-import Analyzer from './Analyzer'
+
 
 export interface hsqAnalyzer {
     analyze: (html: string, filePath: string) => string
@@ -30,8 +30,5 @@ class Crowller {
     }
 }
 
-const secret = 'x3b174jsx'
-const url = `http://www.dell-lee.com/typescript/demo.html?secret=${secret}`
-const analyzer = Analyzer.getInstance()
-new Crowller(analyzer, url)
-console.log(6666666666666)
+
+export default Crowller
